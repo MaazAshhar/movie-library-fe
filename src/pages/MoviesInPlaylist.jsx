@@ -30,8 +30,8 @@ const MoviesInPlaylist = () => {
         setPlaylistName(null);
         setMovielist([]);
       }
+      dispatch(loaderActions.toggleFalse());
     });
-    dispatch(loaderActions.toggleFalse());
   };
   const checkForRemoveIcon = async () => {
     if (!isLoggedIn()) {
