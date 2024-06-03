@@ -68,7 +68,7 @@ const MoviesInPlaylist = () => {
       <div className="mt-4">
         <h3 className="font-lobster text-xl sm:text-3xl md:text-5xl mb-10 text-center">
           {playlistName && <>{playlistName}</>}
-          {!playlistName && <>Access denied</>}
+          {!playlistName && !loader && <>Access denied</>}
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 place-items-center mt-4">
           {playlistName &&
